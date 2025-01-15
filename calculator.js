@@ -108,7 +108,7 @@ function addIva() {
     return;
   }
 
-  const iva = value * 0.21; // Example: 21% VAT
+  const iva = value * 0.22; // Example: 22% VAT
   displayValue = (value + iva).toFixed(2);
 
   updateDisplay();
