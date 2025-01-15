@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Calcu<span style="color: gold">lau</span>tor 💰</h1>
+        <div class="calculator">
+            <!-- Display section with an ID for updating the value -->
+            <div class="display" id="display">0</div>
+
+            <!-- Buttons section -->
+            <div class="buttons">
+                <!-- Number and operator buttons -->
+                <div class="button" onclick="press('7')">7</div>
+                <div class="button" onclick="press('8')">8</div>
+                <div class="button" onclick="press('9')">9</div>
+                <div class="button" onclick="press('/')">/</div>
+                <div class="button" onclick="press('4')">4</div>
+                <div class="button" onclick="press('5')">5</div>
+                <div class="button" onclick="press('6')">6</div>
+                <div class="button" onclick="press('*')">*</div>
+                <div class="button" onclick="press('1')">1</div>
+                <div class="button" onclick="press('2')">2</div>
+                <div class="button" onclick="press('3')">3</div>
+                <div class="button" onclick="press('-')">-</div>
+                <div class="button" onclick="press('0')">0</div>
+                <div class="button" onclick="press('.')">.</div>
+                <div class="button" onclick="calculate()">=</div>
+                <div class="button" onclick="press('+')">+</div>
+                
+                <!-- Conversion and additional operations -->
+                <div class="button toeur" onclick="convert('toeur')">€</div>
+                <div class="button tousd" onclick="convert('tousd')">$</div>
+                <div class="button add-iva" onclick="addIva()">+ IVA</div>
+                <div class="button reset" onclick="resetDisplay()">clear</div>
+            </div>
+        </div>
+
+        <!-- JavaScript file -->
+        <script src="calculator.js"></script>
+        <script src="currencyConverter.js"></script>
+    </main>
+</body>
+
+</html>
